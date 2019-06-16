@@ -1,5 +1,8 @@
 package fudan.se.lab4.dto;
 
+import fudan.se.lab4.service.DataService;
+
+import javax.xml.crypto.Data;
 import java.io.Serializable;
 import java.util.List;
 
@@ -8,6 +11,23 @@ public class Order implements Serializable {
 
     private int id;
     private List<OrderItem> orderItems;
+
+
+    public double getPrice() {
+        double price = 0.0;
+        for(OrderItem it : orderItems){
+            List<Ingredient> ingredientsList = it.getIngredients();
+            double basicPrice = DataService.getDrinkBasicPrice(it.getID());
+            double sizeExtraPrice = DataService.getSizeExtraPrice(it.getID(), it.getSize());
+            price += basicPrice + sizeExtraPrice;
+            if(ingredientsList != null){
+                for(Ingredient ingredient : ingredientsList){
+                    price += DataService.getIngredientPrice(ingredient.getID());
+                }
+            }
+        }
+        return price;
+    }
 
     public Order(int id, List<OrderItem> orderItems) {
         this.id = id;

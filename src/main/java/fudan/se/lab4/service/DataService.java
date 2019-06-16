@@ -12,8 +12,8 @@ import static fudan.se.lab4.Lab4Application.aSwitch;
 
 public interface DataService {
     String USER = "root";
-    String PASS = "";
-    String DB_URL = "jdbc:mysql://localhost:3306/seproject?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
+    String PASS = "990911";
+    String DB_URL = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
     Logger logger = LoggerFactory.getLogger(DataService.class);
     static void closeAll(ResultSet res, Statement stmt, Connection connection) {
         try {

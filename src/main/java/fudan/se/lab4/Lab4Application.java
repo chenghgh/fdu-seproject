@@ -4,7 +4,7 @@ import com.maxmind.geoip2.exception.GeoIp2Exception;
 import fudan.se.lab4.entity.Switch;
 import fudan.se.lab4.entity.User;
 import fudan.se.lab4.service.impl.AccountServiceImpl;
-import fudan.se.lab4.service.impl.OrderServiceImpl;
+
 
 import java.io.IOException;
 import java.util.ResourceBundle;
@@ -15,7 +15,6 @@ public class Lab4Application {
 
     static User user;
     static AccountServiceImpl accountService = new AccountServiceImpl();
-    static OrderServiceImpl orderService = new OrderServiceImpl();
 
     public static void main(String[] args) throws IOException, GeoIp2Exception {
         aSwitch.manualSet();

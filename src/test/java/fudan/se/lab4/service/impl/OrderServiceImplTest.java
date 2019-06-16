@@ -70,7 +70,6 @@ public class OrderServiceImplTest {
         assertEquals(34,info9.getPrice(),0.01);
         assertEquals(0,info9.getDiscount(),0.01);
         assertEquals(34,info9.getDiscountPrice(),0.01);
-        assertEquals(0,info9.getMsgs().size());
 
 
         //test discount5
@@ -114,11 +113,9 @@ public class OrderServiceImplTest {
         Assert.assertEquals(MessageFormat.format(InfoLanguage.getString("DISCOUNT_OF_NOTFUSSY"),6.6),info3.getMsgs().get(0));
 
 
-
-
-
 /******************************************double11***************************************************/
- /*       //test discount of doubleeleven
+/**     passable only when the date is 11.11
+
         orderItems.clear();
 
         ingredients.clear();
@@ -134,44 +131,7 @@ public class OrderServiceImplTest {
         PaymentInfo info2 = orderService.pay(order2);
         Assert.assertEquals(28,info2.getDiscount(),0.01);
         Assert.assertEquals(MessageFormat.format(InfoLanguage.getString("DISCOUNT_OF_DOUBLEELEVEN"),28),info2.getMsgs().get(0));
-
-*/
-//****************************************midmonth***************************************************
-        //test discount of midmonth
-//
-//        orderItems.clear();
-//        ingredients.clear();
-//
-//        orderItem5.setIngredients(new ArrayList<>(ingredients));
-//        orderItems.add(new OrderItem(orderItem5));
-//        orderItem6.setIngredients(new ArrayList<>(ingredients));
-//        orderItems.add(new OrderItem(orderItem6));
-//
-//        Order order5 = new Order(2,new ArrayList<>(orderItems));
-//        PaymentInfo info5 = orderService.pay(order5);
-//        Assert.assertEquals(32,info5.getDiscount(),0.01);
-//        Assert.assertEquals(MessageFormat.format(InfoLanguage.getString("DISCOUNT_OF_MIDMONTH"),32),info5.getMsgs().get(0));
-
-
-
-     /*  //test when the number of free is bigger than 10
-        int num = DiscountServerImpl.numOfFree;
-        DiscountServerImpl.numOfFree = 10;
-        orderItems.clear();
-        ingredients.clear();
-
-        orderItem1.setIngredients(new ArrayList<>(ingredients));
-        orderItems.add(orderItem1);
-
-        Order order4 = new Order(4,new ArrayList<>(orderItems));
-        PaymentInfo info4 =orderService.pay(order4);
-        Assert.assertEquals(0,info4.getDiscount(),0.01);
-
-        DiscountServerImpl.numOfFree = num;*/
-
-
-
-
+ **/
     }
 
 
