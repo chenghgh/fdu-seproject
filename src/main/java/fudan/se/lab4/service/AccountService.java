@@ -34,4 +34,5 @@ public interface AccountService {
      */
     boolean checkPassword(String password);
 
+    String getDescription();
 }

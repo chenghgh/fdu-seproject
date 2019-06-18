@@ -1,7 +1,13 @@
 package fudan.se.lab4.dto;
 
+import fudan.se.lab4.Util.InitUtil;
+import org.slf4j.Logger;
+
 import java.io.Serializable;
+import java.text.MessageFormat;
 import java.util.List;
+
+import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
 
 public class PaymentInfo implements Serializable {
     private static final long serialVersionUID = -5743364759168621824L;
@@ -9,7 +15,7 @@ public class PaymentInfo implements Serializable {
     private double discount;
     private double discountPrice;
     private List<String> msgs;
-
+    private  Logger logger = InitUtil.sysInfoLogger;
     public PaymentInfo(double price, double discount, double discountPrice, List<String> msgs) {
         this.price = price;
         this.discount = discount;
@@ -50,5 +56,10 @@ public class PaymentInfo implements Serializable {
 
     public void setMsgs(List<String> msgs) {
         this.msgs = msgs;
+    }
+
+    public void showInfo(){
+        logger.info(MessageFormat.format(InfoLanguage.getString("PAYMENT_INFO"), this.price, this.discount, this.discountPrice));
+        System.out.println(MessageFormat.format(InfoLanguage.getString("PAYMENT_INFO"), this.price, this.discount, this.discountPrice));
     }
 }

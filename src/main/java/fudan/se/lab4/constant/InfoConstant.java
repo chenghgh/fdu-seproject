@@ -13,7 +13,7 @@ public class InfoConstant {
     public static final String WRONG_KEY_USER_NAME = "Username or password error";
     public static final String LOGGED_IN = "User has logged in";
     public static final String PLEASE_LOGIN = "please login";
-
+    public static final String PERMISSION_DENIED = "Permission denied, please log in to continue";
     //orderService info
     public static final String NULL_ORDER = "You didn't order any drinks";
     public static final String DRINK_NOT_EXIST = "Drink not exist, name : {0}";

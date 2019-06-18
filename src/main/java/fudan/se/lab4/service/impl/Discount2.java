@@ -7,7 +7,9 @@ import scala.Tuple2;
 
 import java.text.MessageFormat;
 import java.util.List;
-import static fudan.se.lab4.Lab4Application.InfoLanguage;
+
+import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
+
 public class Discount2 implements Discount {
     @Override
     public Tuple2<Double, String> calculate(Order order) {

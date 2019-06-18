@@ -6,7 +6,8 @@ import scala.Tuple2;
 
 import java.text.MessageFormat;
 
-import static fudan.se.lab4.Lab4Application.InfoLanguage;
+import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
+
 
 public class Discount5 implements Discount {
     @Override

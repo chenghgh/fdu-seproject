@@ -1,4 +1,5 @@
 package fudan.se.lab4.service;
+import fudan.se.lab4.Util.InitUtil;
 import fudan.se.lab4.Util.LoadJDBCDriver;
 import fudan.se.lab4.constant.InfoConstant;
 import fudan.se.lab4.entity.User;
@@ -8,13 +9,16 @@ import org.slf4j.LoggerFactory;
 import java.sql.*;
 import java.text.MessageFormat;
 
-import static fudan.se.lab4.Lab4Application.aSwitch;
+import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
+import static fudan.se.lab4.Util.InitUtil.aSwitch;
+
 
 public interface DataService {
     String USER = "root";
     String PASS = "990911";
     String DB_URL = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
-    Logger logger = LoggerFactory.getLogger(DataService.class);
+    Logger logger = InitUtil.sysInfoLogger;
+    Logger logger2 = LoggerFactory.getLogger(DataService.class);
     static void closeAll(ResultSet res, Statement stmt, Connection connection) {
         try {
             if (res != null)
@@ -70,11 +74,12 @@ public interface DataService {
             while(res.next()){
                 count++;
                 price = res.getDouble("Price"+aSwitch.getCurrency());
-                System.out.println("price:"+price);
+//                System.out.println("price:"+price);
             }
             if(count == 0){
                 logger.info(MessageFormat.format(InfoConstant.DRINK_NOT_EXIST, id));
-                throw new RuntimeException(MessageFormat.format(InfoConstant.DRINK_NOT_EXIST, id));
+                logger2.info(InfoLanguage.getString("DRINK_NOT_EXIST"));
+//                throw new RuntimeException(MessageFormat.format(InfoConstant.DRINK_NOT_EXIST, id));
             }
         } catch (SQLException e) {
             logger.info(e.getMessage());
@@ -85,7 +90,7 @@ public interface DataService {
 
         return price;
     }
-    public static double getSizeExtraPrice(int id, int size) {
+    static double getSizeExtraPrice(int id, int size) {
         double price = 0;
         int count = 0;
         String sql = "";
@@ -98,7 +103,7 @@ public interface DataService {
             stmt = connection.createStatement();
 //            sql = "select Price from SizeExtraPriceTable where Name=\'"+drinkName+"\' and id="+size;
             sql = getSizeExtraPriceSQLQuery(id, size);
-            System.out.println(sql);
+//            System.out.println(sql);
             res =stmt.executeQuery(sql);
             while(res.next()){
                 count++;
@@ -106,7 +111,8 @@ public interface DataService {
             }
             if(count == 0){
                 logger.info(MessageFormat.format(InfoConstant.SIZE_NOT_EXIST, size));
-                throw new RuntimeException(MessageFormat.format(InfoConstant.SIZE_NOT_EXIST, size));
+                logger2.info(InfoLanguage.getString("SIZE_NOT_EXIST"));
+//                throw new RuntimeException(MessageFormat.format(InfoConstant.SIZE_NOT_EXIST, size));
             }
         } catch (SQLException e) {
             logger.info("connection failed");
@@ -137,7 +143,8 @@ public interface DataService {
             }
             if(count == 0){
                 logger.info(MessageFormat.format(InfoConstant.INGREDIENT_NOT_EXIST, id));
-                throw new RuntimeException(MessageFormat.format(InfoConstant.INGREDIENT_NOT_EXIST, id));
+                logger2.info(InfoLanguage.getString("INGREDIENT_NOT_EXIST"));
+//                throw new RuntimeException(MessageFormat.format(InfoConstant.INGREDIENT_NOT_EXIST, id));
             }
         } catch (SQLException e) {
             logger.info("connection failed");
@@ -158,7 +165,7 @@ public interface DataService {
             stmt = connection.createStatement();
             sql = "insert into userInfoTable(Name, Password) " +
                     "values('"+usr.getName()+"', '"+usr.getPassword()+"')";
-            System.out.println(sql);
+//            System.out.println(sql);
             stmt.executeUpdate(sql);
 
         } catch (SQLException e) {
@@ -193,7 +200,7 @@ public interface DataService {
             connection = DriverManager.getConnection(DB_URL, getEncryptedUname(), getEncryptedPass());
             stmt = connection.createStatement();
             sql = "select * from userInfoTable where Name='"+usr.getName()+"'";
-            System.out.println(sql);
+//            System.out.println(sql);
             resultSet = stmt.executeQuery(sql);
             while(resultSet.next()){
                 count++;
@@ -222,7 +229,7 @@ public interface DataService {
             connection = DriverManager.getConnection(DB_URL, getEncryptedUname(), getEncryptedPass());
             stmt = connection.createStatement();
             sql = "select Password from userInfoTable where Name='"+user.getName()+"'";
-            System.out.println(sql);
+//            System.out.println(sql);
 
             resultSet = stmt.executeQuery(sql);
             while(resultSet.next()){
@@ -230,7 +237,8 @@ public interface DataService {
                 flag = resultSet.getString("Password").equals(user.getPassword());
             }
             if(count == 0){
-                logger.info(MessageFormat.format(InfoConstant.USER_NOT_EXIST, user.getName()));
+//                logger.info(MessageFormat.format(InfoConstant.USER_NOT_EXIST, user.getName()));
+                flag = false;
             }
 
         } catch (SQLException e) {

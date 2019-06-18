@@ -14,7 +14,6 @@ public class Switch {
 
     private Switch(){
         autoSet();
-
     }
 
     private void autoSet() {
@@ -22,19 +21,15 @@ public class Switch {
         this.language = "en_US";
         locale = new Locale(this.getLanguage());
         InfoLanguage = ResourceBundle.getBundle("MultiLanguage.info",locale);
-        System.out.println(this.getLanguage());
-        System.out.println(InfoLanguage.getString("DISCOUNT_OF_NOTFUSSY"));
     }
 
-    public void manualSet() {
-        this.currency = getUserCurrency();
-        this.language = getUserLanguage();
+    public void manualSet(String currency, String language) {
+        this.currency = currency;
+        this.language = language;
         locale = new Locale(this.getLanguage());
         InfoLanguage = ResourceBundle.getBundle("MultiLanguage.info",locale);
     }
 
-    private String getUserCurrency() { return "CNY"; }
-    private String getUserLanguage() { return "en_US"; }
 
     public String getCurrency() { return currency; }
     public String getLanguage() { return language; }

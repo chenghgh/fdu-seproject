@@ -1,5 +1,6 @@
 package fudan.se.lab4.service.impl;
 
+import fudan.se.lab4.Util.InitUtil;
 import fudan.se.lab4.constant.InfoConstant;
 import fudan.se.lab4.entity.User;
 import fudan.se.lab4.repository.impl.UserRepositoryImpl;
@@ -8,14 +9,16 @@ import fudan.se.lab4.service.DataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
 import java.text.MessageFormat;
 
 public class AccountServiceImpl implements AccountService {
     private UserRepositoryImpl usrRepo = new UserRepositoryImpl();
-    private static Logger logger = LoggerFactory.getLogger(AccountService.class);
+    private static Logger logger = InitUtil.sysInfoLogger;
     private boolean loginStatus = false;
     private boolean signupStatus = false;
-
+    private static Logger logger2 = LoggerFactory.getLogger(AccountServiceImpl.class);
     @Override
     public boolean signup(User user) {
         /** examine whether the user name exists or not **/
@@ -23,11 +26,20 @@ public class AccountServiceImpl implements AccountService {
         if(DataService.ifUserExists(user)) {
             signupStatus = false;
             logger.info(MessageFormat.format(InfoConstant.USER_EXIST, user.getName()));
+            System.out.println(MessageFormat.format(InfoLanguage.getString("USER_EXIST"), user.getName()));
         }
         else{
-            signupStatus = true;
-            DataService.creatUser(user);
-            logger.info(MessageFormat.format(InfoConstant.SIGNUP_SUCCESSFUL, user.getName()));
+            if(this.checkName(user.getName()) && this.checkPassword(user.getPassword())){
+                DataService.creatUser(user);
+                logger.info(MessageFormat.format(InfoConstant.SIGNUP_SUCCESSFUL, user.getName()));
+                System.out.println(MessageFormat.format(InfoLanguage.getString("SIGNUP_SUCCESSFUL"), user.getName()));
+                signupStatus = true;
+            }
+            else {
+                signupStatus = false;
+                logger.info(InfoConstant.WRONG_KEY_USER_NAME);
+                System.out.println(InfoLanguage.getString("WRONG_KEY_USER_NAME"));
+            }
 
         }
         return signupStatus;
@@ -40,10 +52,12 @@ public class AccountServiceImpl implements AccountService {
         if(!DataService.checkInfo(user)){
             this.loginStatus = false;
             logger.info(MessageFormat.format(InfoConstant.LOGIN_UNSUCCESSFUL, name));
+            System.out.println(MessageFormat.format(InfoLanguage.getString("LOGIN_UNSUCCESSFUL"), name));
         }
         else {
             this.loginStatus = true;
             logger.info(MessageFormat.format(InfoConstant.LOGIN_SUCCESSFUL, name));
+            System.out.println(MessageFormat.format(InfoLanguage.getString("LOGIN_SUCCESSFUL"), name));
         }
 
         return loginStatus;
@@ -54,9 +68,11 @@ public class AccountServiceImpl implements AccountService {
     public boolean checkStatus() {
         if(this.loginStatus) {
             logger.info(InfoConstant.LOGGED_IN);
+            System.out.println(InfoLanguage.getString("LOGIN_TRUE"));
         }
         else {
             logger.info(InfoConstant.PLEASE_LOGIN);
+            System.out.println(InfoLanguage.getString("LOGIN_FALSE"));
         }
         return this.loginStatus;
     }
@@ -88,6 +104,16 @@ public class AccountServiceImpl implements AccountService {
                     return false;
         }
         return true;
+    }
+
+    @Override
+    public String getDescription() {
+        if(this.loginStatus == false){
+            logger.info(InfoConstant.PERMISSION_DENIED);
+            System.out.println(InfoLanguage.getString("PERMISSION_DENIED"));
+        }
+
+        return null;
     }
 
 }

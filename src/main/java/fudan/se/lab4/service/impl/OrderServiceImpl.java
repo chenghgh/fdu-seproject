@@ -1,8 +1,8 @@
 package fudan.se.lab4.service.impl;
 
+import fudan.se.lab4.Util.InitUtil;
 import fudan.se.lab4.constant.InfoConstant;
 import fudan.se.lab4.dto.Order;
-import fudan.se.lab4.dto.OrderItemInfos;
 import fudan.se.lab4.dto.PaymentInfo;
 import fudan.se.lab4.service.Discount;
 import fudan.se.lab4.service.OrderService;
@@ -16,16 +16,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static fudan.se.lab4.Lab4Application.InfoLanguage;
+import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
+
 
 @Service
 public class OrderServiceImpl implements OrderService {
-    private final static Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
+    private Logger logger = null;
+    private static Logger logger2 = LoggerFactory.getLogger(OrderService.class);
     @Override
     public PaymentInfo pay(Order order) {
+        logger = InitUtil.orderInfoLogger;
         if(order==null||order.getOrderItems()==null||order.getOrderItems().size()==0){
             logger.info(InfoConstant.NULL_ORDER);
-            throw new RuntimeException(InfoConstant.NULL_ORDER);
+            logger2.info(InfoLanguage.getString("NULL_ORDER"));
         }
         List<String> msg = new ArrayList<>();
         Discount discount1 = new Discount1();
@@ -85,26 +88,13 @@ public class OrderServiceImpl implements OrderService {
         paymentInfo.setDiscount(finalDiscount);
         msg.removeAll(Arrays.asList("", null));
         paymentInfo.setMsgs(msg);
-
+        for(String m : msg){
+            logger.info(m);
+            System.out.println(m);
+        }
         //FBInteraction.PrintBill(items, paymentInfo);
 
         return paymentInfo;
-    }
-
-
-
-    //get the total price
-    private double getPrice(OrderItemInfos items){
-
-        return items.getPrice();
-    }
-
-    //get the discount
-    private double getDiscount(OrderItemInfos orderItemInfos,PaymentInfo info){
-
-        DiscountServerImpl discountServer = new DiscountServerImpl();
-
-        return discountServer.getDiscount(orderItemInfos, info);
     }
 
 
