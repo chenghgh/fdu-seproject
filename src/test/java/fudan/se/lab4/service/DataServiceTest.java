@@ -4,9 +4,12 @@ package fudan.se.lab4.service;
 
 import fudan.se.lab4.constant.InfoConstant;
 import fudan.se.lab4.entity.User;
+import org.apache.hadoop.yarn.webapp.hamlet.Hamlet;
 import org.junit.Test;
 
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -98,5 +101,18 @@ public class DataServiceTest {
         assertTrue(DataService.checkInfo(new User("Se19_3carry1","12345678")));
         assertFalse(DataService.checkInfo(new User("Cui","123456")));
         assertFalse(DataService.checkInfo(new User("","")));
+    }
+
+    @Test
+    public void getTableFields() {
+        ArrayList<String> arrayList1 = new ArrayList<>();
+        arrayList1.add("101");
+        arrayList1.add("102");
+        arrayList1.add("201");
+        arrayList1.add("202");
+        arrayList1.add("301");
+        arrayList1.add("302");
+        Map<String, ArrayList<String>> map = DataService.getTableFields("DrinkPriceTable");
+        assertEquals(arrayList1,map.get("Id"));;
     }
 }

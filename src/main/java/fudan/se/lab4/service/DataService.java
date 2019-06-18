@@ -3,11 +3,16 @@ import fudan.se.lab4.Util.InitUtil;
 import fudan.se.lab4.Util.LoadJDBCDriver;
 import fudan.se.lab4.constant.InfoConstant;
 import fudan.se.lab4.entity.User;
+import org.apache.hadoop.yarn.webapp.hamlet.HamletSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
 import static fudan.se.lab4.Util.InitUtil.aSwitch;
@@ -15,7 +20,7 @@ import static fudan.se.lab4.Util.InitUtil.aSwitch;
 
 public interface DataService {
     String USER = "root";
-    String PASS = "990911";
+    String PASS = "";
     String DB_URL = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
     Logger logger = InitUtil.sysInfoLogger;
     Logger logger2 = LoggerFactory.getLogger(DataService.class);
@@ -247,6 +252,48 @@ public interface DataService {
             closeAll(resultSet, stmt, connection);
         }
         return flag;
+    }
+
+    static Map<String, ArrayList<String>> getTableFields(String tableName){
+        Map<String, ArrayList<String>> data = new HashMap<>();
+        String sql = "";
+        LoadJDBCDriver.LoadDriver();
+        Connection connection = null;
+        Statement stmt = null;
+        ResultSet res = null;
+        try {
+            connection = DriverManager.getConnection(DB_URL, getEncryptedUname(), getEncryptedPass());
+
+            stmt = connection.createStatement();
+            sql = "select * from seproject."+tableName;
+            res = stmt.executeQuery(sql);
+            ResultSetMetaData rsmd = res.getMetaData();
+
+            int columns = rsmd.getColumnCount();
+            String[] fieldname = new String[columns];
+            for(int i = 1;i <= columns;i++){
+                fieldname[i-1] = rsmd.getColumnName(i);
+                ArrayList<String> field = new ArrayList<>();
+                data.put(fieldname[i-1],field);
+            }
+            ArrayList<String> a;
+            while(res.next()){
+                for(int j = 0; j < columns;j++){
+                    String str = res.getString(j+1);
+                    a = data.get(fieldname[j]);
+                    data.remove(fieldname[j]);
+                    a.add(str);
+                    data.put(fieldname[j],a);
+                }
+            }
+
+        } catch (SQLException e) {
+            logger.info("connection failed");
+        } finally {
+            closeAll(res, stmt, connection);
+        }
+        return data;
+
     }
 }
 

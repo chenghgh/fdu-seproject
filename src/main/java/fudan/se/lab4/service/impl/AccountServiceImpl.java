@@ -2,6 +2,7 @@ package fudan.se.lab4.service.impl;
 
 import fudan.se.lab4.Util.InitUtil;
 import fudan.se.lab4.constant.InfoConstant;
+import fudan.se.lab4.dto.Ingredient;
 import fudan.se.lab4.entity.User;
 import fudan.se.lab4.repository.impl.UserRepositoryImpl;
 import fudan.se.lab4.service.AccountService;
@@ -12,6 +13,8 @@ import org.slf4j.LoggerFactory;
 
 import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Map;
 
 public class AccountServiceImpl implements AccountService {
     private UserRepositoryImpl usrRepo = new UserRepositoryImpl();
@@ -113,7 +116,21 @@ public class AccountServiceImpl implements AccountService {
             System.out.println(InfoLanguage.getString("PERMISSION_DENIED"));
         }
 
+        Map<String, ArrayList<String>> mapIngre = DataService.getTableFields("IngredientPriceTable");
+        Map<String, ArrayList<String>> mapDrink = DataService.getTableFields("DrinkPriceTable");
+        Map<String, ArrayList<String>> mapSize = DataService.getTableFields("SizeExtraPriceTable");
+        printMap(mapIngre);
+        printMap(mapDrink);
+        printMap(mapSize);
         return null;
+    }
+
+    private void printMap(Map<String,ArrayList<String>> map){
+        for(String key:map.keySet()){
+            ArrayList values = (ArrayList)map.get(key);
+            String valueS = values.toString();
+            System.out.println("name"+ key+"   value ="+valueS);
+        }
     }
 
 }
