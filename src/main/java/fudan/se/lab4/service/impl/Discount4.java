@@ -16,7 +16,7 @@ public class Discount4 implements Discount {
         String msg = "";
         double price = order.getPrice();
         int discountNum = (int)(price / 100);
-        discount = discountNum * 30;
+        discount = discountNum * 30.0;
         if(price > 100){
             msg = MessageFormat.format(InfoLanguage.getString("FULL_DISCOUNT"),price, discount);
         }

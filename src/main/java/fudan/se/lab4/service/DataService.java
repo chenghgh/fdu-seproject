@@ -20,8 +20,8 @@ import static fudan.se.lab4.Util.InitUtil.aSwitch;
 
 public interface DataService {
     String USER = "root";
-    String PASS = "990911";
-    String DB_URL = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
+    String PASS = "";
+    String DB_URL = "jdbc:mysql://localhost:3306/seproject?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
     Logger logger = InitUtil.sysInfoLogger;
     Logger logger2 = LoggerFactory.getLogger(DataService.class);
     static void closeAll(ResultSet res, Statement stmt, Connection connection) {
@@ -60,6 +60,9 @@ public interface DataService {
     }
     static String getIngrePriceSQLQuery(int id){
         return "select Price" + aSwitch.getCurrency() +" from IngredientPriceTable where Id=\'"+id+"\'";
+    }
+    static String getTableNameSQLQuery(String tableName){
+        return  "select * from seproject."+tableName;
     }
     static String getEncryptedUname(){
         return USER;
@@ -335,7 +338,7 @@ public interface DataService {
             connection = DriverManager.getConnection(DB_URL, getEncryptedUname(), getEncryptedPass());
 
             stmt = connection.createStatement();
-            sql = "select * from seproject."+tableName;
+            sql = getTableNameSQLQuery(tableName);
             res = stmt.executeQuery(sql);
             ResultSetMetaData rsmd = res.getMetaData();
 

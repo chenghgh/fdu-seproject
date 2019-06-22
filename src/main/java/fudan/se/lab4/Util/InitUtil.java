@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.util.ResourceBundle;
 
 public class InitUtil {
-    public static Switch aSwitch = Switch.getInstance();
-    public static ResourceBundle InfoLanguage = aSwitch.getInfoLanguage();;
+    public static final Switch aSwitch = Switch.getInstance();
+    public static final ResourceBundle InfoLanguage = aSwitch.getInfoLanguage();;
     public static Logger sysInfoLogger;
     public static Logger orderInfoLogger;
     public static void init(){
