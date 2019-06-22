@@ -22,7 +22,6 @@ public class Lab4Application {
     public static void main(String[] args) throws IOException, GeoIp2Exception {
         InitUtil.init();
         AccountServiceImpl accountService = new AccountServiceImpl();
-//        aSwitch.manualSet();
         User user = new User();
         user.setName("starbb_se19");
         user.setPassword("Se_3CARRY1");
@@ -49,7 +48,7 @@ public class Lab4Application {
         orderItems.add(orderItem2);
         Order order = new Order(GenOrderId.getId(),new ArrayList<>(orderItems));
         PaymentInfo info9 = orderService.pay(order);
-        info9.showInfo();
+//        info9.showInfo();
     }
 }
 

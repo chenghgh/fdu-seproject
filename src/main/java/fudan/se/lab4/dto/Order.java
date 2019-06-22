@@ -16,13 +16,13 @@ public class Order implements Serializable {
 
     public double getPrice() {
         double price = 0.0;
-        for(OrderItem it : orderItems){
+        for (OrderItem it : orderItems) {
             List<Ingredient> ingredientsList = it.getIngredients();
             double basicPrice = DataService.getDrinkBasicPrice(it.getID());
             double sizeExtraPrice = DataService.getSizeExtraPrice(it.getID(), it.getSize());
             price += basicPrice + sizeExtraPrice;
-            if(ingredientsList != null){
-                for(Ingredient ingredient : ingredientsList){
+            if (ingredientsList != null) {
+                for (Ingredient ingredient : ingredientsList) {
                     price += DataService.getIngredientPrice(ingredient.getID());
                 }
             }
@@ -54,22 +54,26 @@ public class Order implements Serializable {
         this.orderItems = orderItems;
     }
 
-    public String showOrder(){
-        StringBuffer sb=null;
-        for(OrderItem it : orderItems){
+    public String showOrder() {
+        StringBuffer sb = new StringBuffer();
+        sb.append("orderId: " + this.id + " ");
+        for (OrderItem it : orderItems) {
             String itname = DataService.getDrinkBasicName(it.getID());
 
-            sb.append(itname+":");
-            sb.append(DataService.getDrinkBasicPrice(it.getID()));
-            sb.append(DataService.getSizeExtraPrice(it.getID(),it.getSize()));
+            sb.append(itname + ":");
+            sb.append(DataService.getDrinkBasicPrice(it.getID()) + " ");
+            sb.append(DataService.getSizeExtraPrice(it.getID(), it.getSize()) + " ");
 
             List<Ingredient> ingredientList = it.getIngredients();
-            for(Ingredient ingre : ingredientList){
-                String ingreName = DataService.getIngredientName(it.getID());
-                sb.append(ingreName);
+            if (ingredientList != null) {
+                for (Ingredient ingre : ingredientList) {
+                    String ingreName = DataService.getIngredientName(ingre.getID());
+                    sb.append(ingreName);
+                }
             }
+
         }
-        if(sb != null)
+        if (sb != null)
             return sb.toString();
         else return null;
     }

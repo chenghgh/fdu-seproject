@@ -20,7 +20,7 @@ import static fudan.se.lab4.Util.InitUtil.aSwitch;
 
 public interface DataService {
     String USER = "root";
-    String PASS = "";
+    String PASS = "990911";
     String DB_URL = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
     Logger logger = InitUtil.sysInfoLogger;
     Logger logger2 = LoggerFactory.getLogger(DataService.class);
@@ -50,7 +50,7 @@ public interface DataService {
         return "select NameOf" + aSwitch.getLanguage() + " from DrinkPriceTable where Id="+id;
     }
     static String getIngreNameSQLQuery(int id){
-        return "select NameOf" + aSwitch.getCurrency() +" from IngredientPriceTable where Id=\'"+id+"\'";
+        return "select NameOf" + aSwitch.getLanguage() +" from IngredientPriceTable where Id="+id;
     }
     static String getDrinkBasicPriceSQLQuery(int id){
         return "select Price" + aSwitch.getCurrency() + " from DrinkPriceTable where Id="+id;
@@ -102,7 +102,7 @@ public interface DataService {
         return price;
     }
     static String getDrinkBasicName(int id)  {
-        String name = null;
+        String name = "";
         int count = 0;
         String sql = "";
         LoadJDBCDriver.LoadDriver();
@@ -215,7 +215,7 @@ public interface DataService {
             res =stmt.executeQuery(sql);
             while(res.next()){
                 count++;
-                name = res.getString("NameOf" + aSwitch.getCurrency());
+                name = res.getString("NameOf" + aSwitch.getLanguage());
             }
             if(count == 0){
                 logger.info(MessageFormat.format(InfoConstant.INGREDIENT_NOT_EXIST, id));

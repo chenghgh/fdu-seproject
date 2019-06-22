@@ -93,7 +93,8 @@ public class OrderServiceImpl implements OrderService {
             System.out.println(m);
         }
         //FBInteraction.PrintBill(items, paymentInfo);
-
+        logger.info(order.showOrder());
+        paymentInfo.showInfo();
         return paymentInfo;
     }
 
