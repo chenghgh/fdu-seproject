@@ -24,13 +24,6 @@ public class DataServiceTest {
         assertEquals(16,(int)DataService.getDrinkBasicPrice(202));
         assertEquals(18,(int)DataService.getDrinkBasicPrice(201));
 
-        //for null
-        try{
-            DataService.getDrinkBasicPrice(103);
-            fail("No exception thrown");
-        }catch (RuntimeException e){
-            //assertEquals(MessageFormat.format(InfoConstant.DRINK_NOT_EXIST,103),e.getMessage());
-        }
 
     }
 
@@ -50,19 +43,7 @@ public class DataServiceTest {
         assertEquals(2,(int)DataService.getSizeExtraPrice(202,1));
         assertEquals(2,(int)DataService.getSizeExtraPrice(201,1));
 
-        //for null
-        try{
-            DataService.getSizeExtraPrice(103,4);
-            fail("No exception thrown");
-        }catch (RuntimeException e){
-//            assertEquals(MessageFormat.format(InfoConstant.SIZE_NOT_EXIST,4),e.getMessage());
-        }
-        try{
-            DataService.getSizeExtraPrice(103,-1);
-            fail("No exception thrown");
-        }catch (RuntimeException e){
-//            assertEquals(MessageFormat.format(InfoConstant.SIZE_NOT_EXIST,-1),e.getMessage());
-        }
+
 
     }
 //
@@ -73,13 +54,6 @@ public class DataServiceTest {
         assertEquals(1,(int)DataService.getIngredientPrice(3));
         assertEquals(1,(int)DataService.getIngredientPrice(4));
 
-        //for null
-        try{
-            DataService.getIngredientPrice(103);
-            fail("No exception thrown");
-        }catch (RuntimeException e){
-
-        }
     }
 //
     @Test

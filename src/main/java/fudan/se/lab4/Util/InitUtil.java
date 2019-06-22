@@ -10,12 +10,12 @@ import java.util.ResourceBundle;
 public class InitUtil {
     public static final Switch aSwitch = Switch.getInstance();
     public static final ResourceBundle InfoLanguage = aSwitch.getInfoLanguage();;
-    public static Logger sysInfoLogger;
-    public static Logger orderInfoLogger;
+    public static final Logger sysInfoLogger = LoggerFactory.getLogger("sysInfoLogger");
+    public static final Logger orderInfoLogger = LoggerFactory.getLogger("orderInfoLogger");
     public static void init(){
         PropertyConfigurator.configure("config/log4j.properties");
-        sysInfoLogger = LoggerFactory.getLogger("sysInfoLogger");
-        orderInfoLogger = LoggerFactory.getLogger("orderInfoLogger");
+        //sysInfoLogger = LoggerFactory.getLogger("sysInfoLogger");
+        //orderInfoLogger = LoggerFactory.getLogger("orderInfoLogger");
     }
 
     private void showItemInfo(){
