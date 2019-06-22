@@ -1,6 +1,7 @@
 package fudan.se.lab4.dto;
 
 import fudan.se.lab4.service.DataService;
+import org.apache.spark.sql.sources.In;
 
 import javax.xml.crypto.Data;
 import java.io.Serializable;
@@ -51,5 +52,25 @@ public class Order implements Serializable {
 
     public void setOrderItems(List<OrderItem> orderItems) {
         this.orderItems = orderItems;
+    }
+
+    public String showOrder(){
+        StringBuffer sb=null;
+        for(OrderItem it : orderItems){
+            String itname = DataService.getDrinkBasicName(it.getID());
+
+            sb.append(itname+":");
+            sb.append(DataService.getDrinkBasicPrice(it.getID()));
+            sb.append(DataService.getSizeExtraPrice(it.getID(),it.getSize()));
+
+            List<Ingredient> ingredientList = it.getIngredients();
+            for(Ingredient ingre : ingredientList){
+                String ingreName = DataService.getIngredientName(it.getID());
+                sb.append(ingreName);
+            }
+        }
+        if(sb != null)
+            return sb.toString();
+        else return null;
     }
 }

@@ -46,6 +46,12 @@ public interface DataService {
             }
         }
     }
+    static String getDrinkBasicNameSQLQuery(int id){
+        return "select NameOf" + aSwitch.getLanguage() + " from DrinkPriceTable where Id="+id;
+    }
+    static String getIngreNameSQLQuery(int id){
+        return "select NameOf" + aSwitch.getCurrency() +" from IngredientPriceTable where Id=\'"+id+"\'";
+    }
     static String getDrinkBasicPriceSQLQuery(int id){
         return "select Price" + aSwitch.getCurrency() + " from DrinkPriceTable where Id="+id;
     }
@@ -94,6 +100,39 @@ public interface DataService {
         }
 
         return price;
+    }
+    static String getDrinkBasicName(int id)  {
+        String name = null;
+        int count = 0;
+        String sql = "";
+        LoadJDBCDriver.LoadDriver();
+        Connection connection = null;
+        Statement stmt = null;
+        ResultSet res = null;
+        try {
+            connection = DriverManager.getConnection(DB_URL, getEncryptedUname(), getEncryptedPass());
+            stmt = connection.createStatement();
+
+            sql = getDrinkBasicNameSQLQuery(id);
+
+            res =stmt.executeQuery(sql);
+            while(res.next()){
+                count++;
+                name = res.getString("NameOf"+aSwitch.getLanguage());
+            }
+            if(count == 0){
+                logger.info(MessageFormat.format(InfoConstant.DRINK_NOT_EXIST, id));
+                logger2.info(InfoLanguage.getString("DRINK_NOT_EXIST"));
+//                throw new RuntimeException(MessageFormat.format(InfoConstant.DRINK_NOT_EXIST, id));
+            }
+        } catch (SQLException e) {
+            logger.info(e.getMessage());
+        } finally {
+            closeAll(res, stmt, connection);
+
+        }
+
+        return name;
     }
     static double getSizeExtraPrice(int id, int size) {
         double price = 0;
@@ -159,7 +198,38 @@ public interface DataService {
         }
         return price;
     }
+    static String getIngredientName(int id)  {
+        String name="";
+        int count = 0;
+        String sql = "";
+        LoadJDBCDriver.LoadDriver();
+        Connection connection = null;
+        Statement stmt = null;
+        ResultSet res = null;
+        try {
+            connection = DriverManager.getConnection(DB_URL, getEncryptedUname(), getEncryptedPass());
+            stmt = connection.createStatement();
+//            sql = "select Price from IngredientPriceTable where Name=\'"+ingreName+"\'";
+            sql = getIngreNameSQLQuery(id);
+//            System.out.println(sql);
+            res =stmt.executeQuery(sql);
+            while(res.next()){
+                count++;
+                name = res.getString("NameOf" + aSwitch.getCurrency());
+            }
+            if(count == 0){
+                logger.info(MessageFormat.format(InfoConstant.INGREDIENT_NOT_EXIST, id));
+                logger2.info(InfoLanguage.getString("INGREDIENT_NOT_EXIST"));
+//                throw new RuntimeException(MessageFormat.format(InfoConstant.INGREDIENT_NOT_EXIST, id));
+            }
+        } catch (SQLException e) {
+            logger.info("connection failed");
+        } finally {
 
+            closeAll(res, stmt, connection);
+        }
+        return name;
+    }
     static void creatUser(User usr) {
         String sql = "";
         LoadJDBCDriver.LoadDriver();
