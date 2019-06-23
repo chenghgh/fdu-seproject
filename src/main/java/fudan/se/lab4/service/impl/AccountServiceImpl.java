@@ -17,11 +17,10 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class AccountServiceImpl implements AccountService {
-    private UserRepositoryImpl usrRepo = new UserRepositoryImpl();
     private static Logger logger = InitUtil.sysInfoLogger;
     private boolean loginStatus = false;
     private boolean signupStatus = false;
-    private static Logger logger2 = LoggerFactory.getLogger(AccountServiceImpl.class);
+
     @Override
     public boolean signup(User user) {
         /** examine whether the user name exists or not **/

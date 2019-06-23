@@ -66,7 +66,7 @@ public class OrderServiceImplTest {
         orderItems.add(orderItem5);
 
 
-        Order order9 = new Order(GenOrderId.getId(),new ArrayList<>(orderItems));
+        Order order9 = new Order(new ArrayList<>(orderItems));
         PaymentInfo info9 = orderService.pay(order9);
         assertEquals(34,info9.getPrice(),0.01);
         assertEquals(0,info9.getDiscount(),0.01);
@@ -92,7 +92,7 @@ public class OrderServiceImplTest {
         orderItems.add(orderItem5);
 
 
-        Order order1 = new Order(GenOrderId.getId(),new ArrayList<>(orderItems));
+        Order order1 = new Order(new ArrayList<>(orderItems));
         PaymentInfo info1 = orderService.pay(order1);
         assertEquals(87.4,info1.getPrice(),0.01);
         assertEquals(13.11,info1.getDiscount(),0.01);
@@ -108,7 +108,7 @@ public class OrderServiceImplTest {
         orderItem4.setIngredients(new ArrayList<>());
         orderItems.add(new OrderItem(orderItem4));
 
-        Order order3 = new Order(GenOrderId.getId(),new ArrayList<>(orderItems));
+        Order order3 = new Order(new ArrayList<>(orderItems));
         PaymentInfo info3 = orderService.pay(order3);
         Assert.assertEquals(6.6,info3.getDiscount(),0.01);
 

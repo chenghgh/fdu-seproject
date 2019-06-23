@@ -1,5 +1,6 @@
 package fudan.se.lab4.dto;
 
+import fudan.se.lab4.Util.GenOrderId;
 import fudan.se.lab4.service.DataService;
 import org.apache.spark.sql.sources.In;
 
@@ -12,7 +13,6 @@ public class Order implements Serializable {
 
     private String id;
     private List<OrderItem> orderItems;
-
 
     public double getPrice() {
         double price = 0.0;
@@ -30,8 +30,8 @@ public class Order implements Serializable {
         return price;
     }
 
-    public Order(String id, List<OrderItem> orderItems) {
-        this.id = id;
+    public Order( List<OrderItem> orderItems) {
+        this.id = GenOrderId.getId();
         this.orderItems = orderItems;
     }
 
@@ -42,9 +42,6 @@ public class Order implements Serializable {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public List<OrderItem> getOrderItems() {
         return orderItems;

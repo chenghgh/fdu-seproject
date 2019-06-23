@@ -4,6 +4,8 @@ import fudan.se.lab4.entity.User;
 
 public interface AccountService {
 
+
+
     boolean login(User user);
 
     boolean signup(User user);

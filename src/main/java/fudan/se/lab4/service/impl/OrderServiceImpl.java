@@ -1,8 +1,11 @@
 package fudan.se.lab4.service.impl;
 
+import fudan.se.lab4.Util.GenOrderId;
 import fudan.se.lab4.Util.InitUtil;
 import fudan.se.lab4.constant.InfoConstant;
+import fudan.se.lab4.dto.Ingredient;
 import fudan.se.lab4.dto.Order;
+import fudan.se.lab4.dto.OrderItem;
 import fudan.se.lab4.dto.PaymentInfo;
 import fudan.se.lab4.service.Discount;
 import fudan.se.lab4.service.OrderService;
@@ -23,6 +26,7 @@ import static fudan.se.lab4.Util.InitUtil.InfoLanguage;
 public class OrderServiceImpl implements OrderService {
     private Logger logger = null;
     private static Logger logger2 = LoggerFactory.getLogger(OrderService.class);
+
     @Override
     public PaymentInfo pay(Order order) {
         logger = InitUtil.orderInfoLogger;
