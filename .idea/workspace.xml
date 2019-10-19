@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4aee48-023b-4259-bc5f-20328402aa08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/GetInputInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/Lab4Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/Lab4Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/ExchangeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/impl/OrderServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/DataService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/DataServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="114">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,54 +44,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="101" column="12" lean-forward="true" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
+            <state relative-caret-position="437">
+              <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/impl/OrderServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="1197">
+              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
               <folding>
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenOrderId.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/Util/GenOrderId.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/impl/OrderServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lab4Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/Lab4Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="2527">
+              <caret line="133" column="4" lean-forward="true" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,29 +78,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentInfo.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/PaymentInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="741">
+              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderItem.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/Lab4Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/OrderItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            <state relative-caret-position="520">
+              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding>
                 <element signature="e#678#679#0" expanded="true" />
                 <element signature="e#708#709#0" expanded="true" />
@@ -141,13 +114,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetInputInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/GetInputInfo.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/constant/ConfigConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/constant/InfoConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,26 +191,17 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
       <select />
     </treeState>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="164" />
-    <option name="width" value="1440" />
-    <option name="height" value="715" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="520" />
+    <option name="y" value="85" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -228,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,6 +223,11 @@
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab6" type="462c0819:PsiDirectoryNode" />
               <item name=".mvn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -296,57 +285,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="OrderController" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="Ingredient" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="Order" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="OrderItem" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="PaymentInfo" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -364,8 +303,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="Switch" type="1a9f42e2:ClassTreeNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -374,8 +312,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="1a9f42e2:ClassTreeNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -395,58 +333,6 @@
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="OrderServiceImpl" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="TimeService" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="AccountService" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="DataService" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Discount" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -456,25 +342,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
               <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
-              <item name="GenOrderId" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="Lab4Application" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -490,6 +357,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="MultiLanguage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="MultiLanguage" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'info'" type="a6c14932:ResourceBundleNode" />
             </path>
             <path>
               <item name="lab4-skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -544,7 +420,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="CatdeaLogs" />
     </panes>
@@ -562,7 +437,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -589,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lab4Application">
+  <component name="RunManager" selected="JUnit.OrderServiceImplTest (1)">
     <configuration name="Lab4Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fudan.se.lab4.Lab4Application" />
       <module name="Lab6" />
@@ -599,6 +474,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DataServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab6" />
@@ -608,22 +486,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fudan.se.lab4.service" />
       <option name="MAIN_CLASS_NAME" value="fudan.se.lab4.service.DataServiceTest" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="DataServiceTest.getDrinkBasicPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab6" />
       <extension name="coverage">
         <pattern>
@@ -631,43 +503,27 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fudan.se.lab4.service" />
       <option name="MAIN_CLASS_NAME" value="fudan.se.lab4.service.DataServiceTest" />
-      <option name="METHOD_NAME" value="getDrinkBasicPrice" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="DataServiceTest.getTableFields (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fudan.se.lab4.service.*" />
+          <option name="PATTERN" value="fudan.se.lab4.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fudan.se.lab4.service" />
-      <option name="MAIN_CLASS_NAME" value="fudan.se.lab4.service.DataServiceTest" />
-      <option name="METHOD_NAME" value="getTableFields" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <option name="PACKAGE_NAME" value="fudan.se.lab4.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="fudan.se.lab4.service.impl.OrderServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="OrderServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab6" />
@@ -677,35 +533,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fudan.se.lab4.service.impl" />
       <option name="MAIN_CLASS_NAME" value="fudan.se.lab4.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DataServiceTest (1)" />
-      <item itemvalue="JUnit.DataServiceTest.getDrinkBasicPrice" />
-      <item itemvalue="JUnit.DataServiceTest.getTableFields (1)" />
-      <item itemvalue="JUnit.OrderServiceImplTest" />
       <item itemvalue="Application.Lab4Application" />
+      <item itemvalue="JUnit.DataServiceTest (1)" />
+      <item itemvalue="JUnit.OrderServiceImplTest" />
+      <item itemvalue="JUnit.DataServiceTest" />
+      <item itemvalue="JUnit.OrderServiceImplTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceImplTest (1)" />
+        <item itemvalue="JUnit.DataServiceTest" />
         <item itemvalue="Application.Lab4Application" />
         <item itemvalue="JUnit.OrderServiceImplTest" />
         <item itemvalue="JUnit.DataServiceTest (1)" />
-        <item itemvalue="JUnit.DataServiceTest.getDrinkBasicPrice" />
-        <item itemvalue="JUnit.DataServiceTest.getTableFields (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -732,15 +582,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderServiceImplTest - 2019.06.22 at 18h 36m 04s.xml">
-      <configuration name="OrderServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataServiceTest_(1) - 2019.06.22 at 18h 36m 19s.xml">
-      <configuration name="DataServiceTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataServiceTest_(1) - 2019.06.22 at 18h 37m 10s.xml">
-      <configuration name="DataServiceTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataServiceTest_(1) - 2019.06.22 at 18h 37m 49s.xml">
       <configuration name="DataServiceTest (1)" configurationId="JUnit" />
     </history-entry>
@@ -762,9 +603,18 @@
     <history-entry file="DataServiceTest_getDrinkBasicPrice - 2019.06.22 at 18h 44m 08s.xml">
       <configuration name="DataServiceTest.getDrinkBasicPrice" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DataServiceTest - 2019.06.23 at 15h 24m 02s.xml">
+      <configuration name="DataServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderServiceImplTest_(1) - 2019.06.23 at 15h 24m 16s.xml">
+      <configuration name="OrderServiceImplTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderServiceImplTest_(1) - 2019.06.23 at 15h 25m 41s.xml">
+      <configuration name="OrderServiceImplTest (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37257000" />
+    <option name="totallyTimeSpent" value="38668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -776,55 +626,78 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="143" width="1440" height="715" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.32719547" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27345845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3526912" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32847896" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32956153" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932975" visible="true" weight="0.33495146" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32847896" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865952" weight="0.47025496" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3526912" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32956153" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
-      <window_info anchor="right" id="Bean Validation" order="6" weight="0.3297587" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32956153" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java">
@@ -858,18 +731,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/MultiLanguage/info_en_US.properties">
-      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-324" />
       </provider>
+      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/MultiLanguage/info_zh_CN.properties">
-      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
+      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -878,7 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/orderInfo.log" />
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/Discount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -895,8 +767,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/Util/InitUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -938,23 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/constant/InfoConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/DataServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/Util/LoadJDBCDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -962,33 +817,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/constant/ConfigConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/sysInfo.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/info.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/error.log" />
+    <entry file="file://$PROJECT_DIR$/log/info.log" />
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1010,13 +840,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/ExchangeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/ExchangeService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/Discount5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1043,8 +867,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/Discount1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="285">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="133">
+          <caret line="123" column="20" lean-forward="true" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1107,8 +934,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/DataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="116">
+          <caret line="329" column="50" selection-start-line="329" selection-start-column="50" selection-end-line="329" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1132,33 +959,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/impl/OrderServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/OrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/Lab4Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="309">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1172,28 +976,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/log/orderInfo.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/sysInfo.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/DataServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="101" column="12" lean-forward="true" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
+        <state relative-caret-position="114">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fudan/se/lab4/service/impl/OrderServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2527">
+          <caret line="133" column="4" lean-forward="true" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/constant/ConfigConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/constant/InfoConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/PaymentInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="741">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding>
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/dto/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state relative-caret-position="1197">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
           <folding>
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fudan/se/lab4/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1248,7 +1116,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>lab4-skeleton</last-edited>
+          <last-edited>Lab6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
